@@ -11,14 +11,6 @@ import "./App.css"; // Assuming you have a CSS file for styles
 
 function App() {
   useEffect(() => {
-    /* ----- TYPING EFFECT ----- */
-    const typingEffect = new Typed(".typedText", {
-      strings: ["Teacher", "Lecturer", "Developer"],
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 80,
-      backDelay: 2000,
-    });
     /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
     function headerShadow() {
       const navHeader = document.getElementById("header");
@@ -110,6 +102,15 @@ function App() {
 
     srRight.reveal(".skills-box", { delay: 100 });
     srRight.reveal(".form-control", { delay: 100 });
+
+    /* ----- TYPING EFFECT ----- */
+    const typingEffect = new Typed(".typedText", {
+      strings: ["Lecturer", "Developer", "Researcher"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 2000,
+    });
     return () => {
       typingEffect.destroy();
     };
@@ -125,9 +126,9 @@ function App() {
       </main>
       <Footer />
       {/* Include external scripts */}
-      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      {/* <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
       <script src="https://unpkg.com/scrollreveal"></script>
-      <script src="assets/js/main.js"></script>
+      <script src="assets/js/main.js"></script> */}
     </div>
   );
 }
