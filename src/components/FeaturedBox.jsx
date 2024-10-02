@@ -1,3 +1,5 @@
+import avatar from "../assets/images/avatar.jpg";
+import cv from "../assets/download/CV_WUTTHA.pdf";
 const FeaturedBox = () => {
   return (
     <section className="featured-box" id="home">
@@ -20,7 +22,7 @@ const FeaturedBox = () => {
           </p>
         </div>
         <div className="featured-text-btn">
-          <a href="/assets/download/CV_WUTTHA_THAI-211121.pdf" download>
+          <a href={cv} download>
             <button className="btn">
               Download CV <i className="uil uil-file-alt"></i>
             </button>
@@ -47,7 +49,7 @@ const FeaturedBox = () => {
       </div>
       <div className="featured-image">
         <div className="image">
-          <img src="assets/images/avatar.jpg" alt="avatar" />
+          <img src={avatar} alt="avatar" />
         </div>
       </div>
       <div className="scroll-icon-box">
