@@ -1,4 +1,4 @@
-import React from "react";
+import cv from "../assets/download/CV_WUTTHA.pdf";
 
 const AboutBox = () => {
   return (
@@ -19,7 +19,7 @@ const AboutBox = () => {
               experiences. Let's build something amazing together!
             </p>
             <div className="about-btn">
-              <a href="/assets/download/CV_WUTTHA_THAI-211121.pdf" download>
+              <a href={cv} download>
                 <button className="btn">
                   Download CV <i className="uil uil-import"></i>
                 </button>

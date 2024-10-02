@@ -1,3 +1,5 @@
+import cv from "../assets/download/CV_WUTTHA.pdf";
+
 const Header = () => {
   const myMenuFunction = () => {
     const menuBtn = document.getElementById("myNavMenu");
@@ -43,7 +45,9 @@ const Header = () => {
       </div>
       <div className="nav-button">
         <button className="btn">
-          Download CV <i className="uil uil-file-alt"></i>
+          <a href={cv}>
+            Download CV <i className="uil uil-file-alt"></i>
+          </a>
         </button>
       </div>
       <div className="nav-menu-btn">
