@@ -44,11 +44,11 @@ const Header = () => {
         </ul>
       </div>
       <div className="nav-button">
-        <button className="btn">
-          <a href={cv}>
+        <a href={cv}>
+          <button className="btn">
             Download CV <i className="uil uil-file-alt"></i>
-          </a>
-        </button>
+          </button>
+        </a>
       </div>
       <div className="nav-menu-btn">
         <i className="uil uil-bars" onClick={myMenuFunction}></i>
